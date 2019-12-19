@@ -1,2 +1,2 @@
 # Kattis
-Solutions to Kattis coding problems
+My solutions to Kattis coding problems.
