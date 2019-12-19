@@ -72,6 +72,7 @@ int main()
 					}
 				}
 
+				// Now doing the same for the other operators
 				for (int it = 0; it < ops.size(); ++it)
 				{
 					nums[it] = eval(nums[it], nums[it + 1], ops[it]);
@@ -79,7 +80,8 @@ int main()
 					ops.erase(ops.begin() + it);
 					--it;
 				}
-
+				
+				// Inserting the solution into our solution vector
 				ans[nums[0]] = "4 " + string(1, m[i]) + " 4 " + string(1, m[j]) + " 4 " + string(1, m[k]) + " 4 = " + to_string(nums[0]);
 			}
 		}
